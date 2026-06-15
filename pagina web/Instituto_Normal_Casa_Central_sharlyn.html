@@ -1,0 +1,472 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Instituto Normal Casa Central</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Arial, sans-serif;
+   background:linear-gradient(to bottom,#eaf2ff,#ffffff);
+    color:#333;
+}
+
+/* Encabezado */
+header{
+    background-image:url("colores.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+header h1{
+    color:#FFD700;
+    font-family:'Cinzel', serif;
+    font-size:55px;
+    text-shadow:2px 2px 8px black;
+}
+
+header p{
+    color:#FFF5CC;
+    font-size:22px;
+    font-style:italic;
+    text-shadow:2px 2px 5px black;
+}
+.logo{
+    width:140px;
+    height:140px;
+    background:white;
+    border-radius:50%;
+    padding:8px;
+    margin-bottom:10px;
+    box-shadow:0 0 20px white;
+}
+/* Menú */
+nav{
+    background:linear-gradient(
+    90deg,
+    #001f4d,
+    #003366,
+    #001f4d
+    );
+
+    border-top:2px solid gold;
+    border-bottom:2px solid gold;
+
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:8px 20px;
+}
+
+nav a{
+    color:#FFD700;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:18px;
+    transition:0.3s;
+}
+nav a:hover{
+    color:white;
+    text-shadow:0 0 10px gold;
+}
+/* Imagen principal */
+.portada{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    background-color:#ffffff;
+}
+
+/* Secciones */
+section{
+    background:white;
+    margin:25px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 10px #bbb;
+    transition:0.3s;
+}
+
+section:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px #999;
+}
+
+h2{
+    color:#003366;
+    margin-bottom:15px;
+    border-bottom:3px solid #ffd700;
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+p{
+    line-height:1.7;
+    text-align:justify;
+}
+
+ul{
+    margin-left:25px;
+    line-height:1.8;
+}
+
+/* Galería */
+.galeria{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.galeria img{
+    width:450px;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+    transition:0.3s;
+}
+
+.galeria img:hover{
+    transform:scale(1.05);
+}
+
+/* Botones */
+.boton{
+    display:inline-block;
+    background:#0059b3;
+    color:white;
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+.boton:hover{
+    background:#003366;
+}
+
+/* Pie de página */
+footer{
+    background:
+    linear-gradient(
+    rgba(0,0,40,0.75),
+    rgba(0,0,40,0.75)
+    ),
+    url("colores.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+    text-align:center;
+    padding:25px;
+
+    border-top:4px solid gold;
+}
+footer p:last-child{
+    color:#FFD700;
+}
+.visor{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+}
+
+.visor img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:15px;
+}
+
+.boton{
+    margin-right:10px;
+}
+</style>
+
+</head>
+
+<body id="inicio">
+
+<header>
+    <img src="logo.jpg" class="logo" 
+    alt="Logo Instituto Normal Casa Central">
+
+    <h1>Instituto Normal Casa Central</h1>
+    <p>
+    Educación con valores, excelencia y servicio a la sociedad
+    </p>
+</header>
+
+
+<nav>
+<ul>
+<li><a href="#historia">📖 Historia</a></li>
+<li><a href="#mision">🎯 Misión</a></li>
+<li><a href="#vision">🌟 Visión</a></li>
+<li><a href="#carreras">🎓 Carreras</a></li>
+<li><a href="#galeria">📸 Galería</a></li>
+<li><a href="#contacto">📞 Contacto</a></li></ul>
+</nav>
+
+
+<img src="fachada.jpg" 
+class="portada" 
+alt="Instituto Normal Casa Central">
+
+
+<section id="historia">
+
+<h2>Nuestra Historia</h2>
+
+<p>
+El Instituto Normal Casa Central posee una larga trayectoria educativa vinculada a las Hijas de la Caridad de San Vicente de Paúl. Sus orígenes se remontan a la década de 1860, cuando las religiosas llegaron a Guatemala para brindar ayuda a los pacientes del Hospital General San Juan de Dios y atender a las niñas huérfanas.
+</p>
+
+<br>
+
+<p>
+En 1865 se fundó oficialmente la Casa Central, siendo una institución pionera en la educación de la mujer. A través de los años amplió sus servicios educativos, formando estudiantes con conocimientos académicos, valores cristianos y espíritu de servicio.
+</p>
+
+<br>
+
+<p>
+En 1945 Sor Filomena Roch inauguró oficialmente el Instituto Normal Casa Central y en 1948 se construyó su edificio propio, permitiendo su crecimiento y el fortalecimiento de su labor educativa.
+</p>
+
+<br>
+
+<p>
+También destacó la labor de Sor Cecilia Charrín, quien dedicó su vida al servicio de los más necesitados y contribuyó al desarrollo de obras educativas y sociales en Guatemala.
+</p>
+
+<br>
+
+<p>
+Actualmente, el instituto continúa formando profesionales en diferentes áreas, manteniendo el legado vicentino de responsabilidad, solidaridad y amor al prójimo.
+</p>
+
+</section>
+
+
+<section id="mision">
+
+<h2>Misión</h2>
+
+<p>
+Somos una institución educativa católica vicentina comprometida con la formación integral de jóvenes, inspirada en los valores de Jesucristo y el carisma de San Vicente de Paúl. Brindamos una educación de calidad académica, humana y espiritual en las carreras de Perito Contador, Magisterio en Educación Preprimaria y Bachillerato en Ciencias y Letras con Orientación en Computación, promoviendo el liderazgo, la solidaridad y el servicio a los más necesitados.
+</p>
+
+</section>
+
+
+<section id="vision">
+
+<h2>Visión</h2>
+
+<p>
+Ser una institución educativa católica vicentina reconocida por su excelencia académica, formación en valores cristianos y compromiso social, formando profesionales competentes, innovadores y éticos capaces de responder a los desafíos del mundo actual con fe, responsabilidad y liderazgo.
+</p>
+
+</section>
+
+
+<section id="carreras">
+
+<h2>Carreras de Diversificado</h2>
+
+<ul>
+<li>Perito Contador</li>
+<li>Magisterio en Educación Preprimaria</li>
+<li>Bachillerato en Ciencias y Letras con Orientación en Computación</li>
+</ul>
+
+</section>
+
+
+<section id="galeria">
+
+<h2>Galería Institucional</h2>
+
+<div class="galeria">
+
+<img src="galeria1.jpg"
+alt="Estudiantes del instituto"
+onclick="abrirImagen(this)">
+
+<img src="galeria2.jpg"
+alt="Actividades del instituto"
+onclick="abrirImagen(this)">
+
+<img src="galeria3.jpg"
+alt="Estudiantes del instituto"
+onclick="abrirImagen(this)">
+
+<img src="galeria4.jpg"
+alt="Docentes del instituto"
+onclick="abrirImagen(this)">
+
+<img src="galeria5.jpg"
+alt="Profesor Dimitri"
+onclick="abrirImagen(this)">
+
+<img src="galeria6.jpg"
+alt="La Normal tiene talento"
+onclick="abrirImagen(this)">
+
+<img src="galeria7.jpg"
+alt="dibujos de Lucia"
+onclick="abrirImagen(this)">
+
+<img src="galeria8.jpg"
+alt="Estudiantes del instituto"
+onclick="abrirImagen(this)">
+
+<img src="galeria9.jpg"
+alt="Estudiantes del instituto"
+onclick="abrirImagen(this)">
+
+<img src="galeria10.jpg"
+alt="Actos civicos"
+onclick="abrirImagen(this)">
+
+<img src="galeria11.jpg"
+alt="Clases practicas del instituto"
+onclick="abrirImagen(this)">
+
+<img src="galeria12.jpg"
+alt="Actividades recreativas "
+onclick="abrirImagen(this)">
+
+<img src="galeria13.jpg"
+alt="Estudiantes del instituto"
+onclick="abrirImagen(this)">
+
+<img src="galeria14.jpg"
+alt="Actividades del instituto"
+onclick="abrirImagen(this)">
+
+<img src="galeria15.jpg"
+alt="Laboratorios"
+onclick="abrirImagen(this)">
+
+<img src="galeria16.jpg"
+alt="Estudiantes del instituto"
+onclick="abrirImagen(this)">
+
+<img src="galeria17.jpg"
+alt="Celebración día del maestro"
+onclick="abrirImagen(this)">
+
+<img src="galeria18.jpg"
+alt="Actividades Religiosas"
+onclick="abrirImagen(this)">
+
+
+</div>
+</section>
+
+
+<section id="contacto">
+
+<h2>Contacto</h2>
+
+<p>
+📍 Dirección: 1ra avenida 13-63 zona 1, Ciudad de Guatemala.
+</p>
+
+<br>
+
+<p>
+☎ Teléfono: 2238-4684
+</p>
+
+<a class="boton" href="#inicio">
+Volver al inicio
+</a>
+
+<a class="boton"
+href="https://www.facebook.com/share/19FAf2uehM/?mibextid=wwXIfr"
+target="_blank">
+📘 Facebook
+</a>
+
+<a class="boton"
+href="https://www.instagram.com/incc.gt?igsh=MXdldTM3a3YyMXA0Mg=="
+target="_blank">
+📸 Instagram
+</a>
+
+</section>
+
+
+<footer>
+<p>
+© 2026 Instituto Normal Casa Central |
+Página informativa 
+</p>
+
+<br>
+
+<p>
+Pàgina web creada por: Sharlyn Alvarado
+</p>
+</footer>
+
+<div id="visor" class="visor" onclick="cerrarImagen()">
+    <img id="imagenGrande">
+</div>
+
+<script>
+
+function abrirImagen(imagen){
+    document.getElementById("visor").style.display="flex";
+    document.getElementById("imagenGrande").src=imagen.src;
+}
+
+function cerrarImagen(){
+    document.getElementById("visor").style.display="none";
+}
+
+</script>
+
+<audio controls loop>
+    <source src="Pescador De Hombres.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>
+
